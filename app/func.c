@@ -14,7 +14,7 @@ solution Func(double a, double b, double c){
 	    res.x1 = (-c) / b;
 	    return res;
 	}
-    }
+    } 
 
     double d = b * b - 4 * a * c;
 
@@ -31,3 +31,5 @@ solution Func(double a, double b, double c){
 
     return res;
 }
+ 
+ 
