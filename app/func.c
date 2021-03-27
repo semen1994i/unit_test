@@ -7,10 +7,16 @@ solution Func(double a, double b, double c){
 
     if (a == 0){
 	if (b == 0){
-	    res.count = 0;
-	    return res;
+		if (c == 0){
+			res.count = "Любое число";
+			return res;
+		}
+		else{
+			res.count = -1;
+			return res;
+		}
 	}
-	else{
+	    else{
 	    res.x1 = (-c) / b;
 	    return res;
 	}
