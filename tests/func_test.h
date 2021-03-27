@@ -28,12 +28,12 @@ TEST(Func, test4_negative){
 
 TEST(Func, test5_negative){
     solution res = Func(0, 0, 0);
-    EXPECT_EQ("any", res.otv);
+    EXPECT_EQ(1111, res.otv);
 }
 
 TEST(Func, test6_negative){
     solution res = Func(0, 0, 1);
-    EXPECT_EQ("no", res.otv);
+    EXPECT_EQ(0, res.otv);
 }
 
 TEST(Func, test7_negative){
