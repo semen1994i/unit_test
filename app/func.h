@@ -5,6 +5,7 @@ typedef struct _solution{
     double x1;
     double x2;
     int count;
+    char otv;
 } solution;
 
 solution Func(double a, double b, double c);
