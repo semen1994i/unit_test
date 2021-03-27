@@ -6,7 +6,7 @@ solution Func(double a, double b, double c) {
 
     if (a == 0){
 	    if (b == 0){
-		    if (c == 0){
+		    if (c == 0){ 
 			    res.count = 1111;
 			    return res;
 		    }
