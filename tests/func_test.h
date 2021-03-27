@@ -33,5 +33,5 @@ TEST(Func, test5_negative){
 
 TEST(Func, test6_negative){
     solution res = Func(0, 0, 0);
-    EXPECT_EQ(0, res.count);
+    EXPECT_EQ(0, res);
 }
