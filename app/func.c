@@ -1,41 +1,32 @@
-#include <stdio.h>
 #include <math.h>
 #include "func.h"
 
-solution Func(double a, double b, double c){
+solution Func(double a, double b, double c) {
     solution res;
 
     if (a == 0){
-	if (b == 0){
-		if (c == 0){
-			res.count = -2;
-			return res;
-		}
-		else{
-			res.count = -1;
-			return res;
-		}
-	}
+        if (b == 0){
+            res.count = 0;
+            return res;
+        }
 	    else{
-	    res.x1 = (-c) / b;
-	    return res;
-	}
-    } 
-
-    double d = b * b - 4 * a * c;
-
-    if (d > 0){
-	res.x1 = (-b - sqrt(d))/ (2 * a);
-	res.x2 = (-b + sqrt(d))/ (2 * a);
+        res.x1 = (-c)/b;
+        return res;
+	    }
     }
 
-    if (d == 0.0)
-	res.x1 = -b / (2 * a);
+    double D = b * b - 4 * a * c;
 
-    if (d < 0.0)
-	res.count = 0;
-
+    if (D < 0.0){
+        res.count = 0;
+    }
+	
+    if (D == 0.0) {
+        res.x1 = -b/(2*a);
+    }
+    if (D > 0.0) {
+        res.x1 = (-b - sqrt(D)) / (2*a);
+        res.x2 = (-b + sqrt(D)) / (2*a);
+    }
     return res;
 }
- 
- 
