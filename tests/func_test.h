@@ -7,7 +7,7 @@ extern "C" {
 
 TEST(Func, two_sol) {
     solution res = Func(1, -2, -3);
-    EXPECT_EQ(1, res.x1);
+    EXPECT_EQ(-1, res.x1);
     EXPECT_EQ(3, res.x2);
 }
 
