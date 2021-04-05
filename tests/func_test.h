@@ -40,7 +40,3 @@ TEST(Func, test7_negative){
     solution res = Func(-1, -5, -10);
     EXPECT_EQ(0, res.count);
 }
-
-TEST(Func, test8_kolich){
-    
-}
