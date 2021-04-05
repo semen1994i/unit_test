@@ -26,6 +26,7 @@ TEST(Func, no_sol) {
 TEST(Func, test4_negative){
     solution res = Func(0, 1, 1);
     EXPECT_EQ(-1, res.x1);
+    EXPECT_EQ(1, res.count);
 }
 
 TEST(Func, test5_negative){
@@ -41,4 +42,11 @@ TEST(Func, test6_negative){
 TEST(Func, test7_negative){
     solution res = Func(-1, -5, -10);
     EXPECT_EQ(0, res.count);
+}
+
+TEST(Func, test8){
+    solution res = Func(1, 20, 3);
+    EXPECTED_EQ(-19.848857801796104, res.x1);
+    EXPECTED_EQ(-0.15114219820389607, res.x2);
+    EXPECT_EQ(2, res.count);
 }
