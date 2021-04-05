@@ -9,11 +9,13 @@ TEST(Func, two_sol) {
     solution res = Func(1, -2, -3);
     EXPECT_EQ(-1, res.x1);
     EXPECT_EQ(3, res.x2);
+    EXPECT_EQ(2, res.count);
 }
 
 TEST(Func, one_sol) {
     solution res = Func(1, 12, 36);
     EXPECT_EQ(-6, res.x1);
+    EXPECT_EG(1, res.count);
 }
 
 TEST(Func, no_sol) {
