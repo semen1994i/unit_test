@@ -17,6 +17,7 @@ solution Func(double a, double b, double c) {
 		}
 		else{
 			res.x1 = -c / b;
+			res.count = 1;
 			return res;
 		}
 	}
