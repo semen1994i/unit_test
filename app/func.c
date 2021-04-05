@@ -9,7 +9,7 @@ solution Func(double a, double b, double c) {
 			if (c == 0){
 				res.count = 1111;
 				return res;
-			}
+			} 
 			else{
 				res.count = 0;
 				return res;
