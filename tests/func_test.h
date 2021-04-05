@@ -50,3 +50,4 @@ TEST(Func, test8){
     EXPECT_EQ(-0.15114219820389607, res.x2);
     EXPECT_EQ(2, res.count);
 }
+
