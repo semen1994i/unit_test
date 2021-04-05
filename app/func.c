@@ -27,10 +27,12 @@ solution Func(double a, double b, double c) {
 	}
 	if (d == 0.0) {
 		res.x1 = -b/(2*a);
+		res.count = 1;
 	}
 	if (d > 0.0) {
 		res.x1 = (-b - sqrt(d)) / (2*a);
 		res.x2 = (-b + sqrt(d)) / (2*a);
+		res.count = 2;
 	}
 	return res;
 }
